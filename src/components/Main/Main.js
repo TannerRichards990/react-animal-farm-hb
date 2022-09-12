@@ -8,7 +8,7 @@ import background from '../../background.png';
 export default function Main() {
   return <main style={{ backgroundImage: `url(${background})` }}>
     {animals.map((animal) => (
-      <Animal key={animal.name} name={animal.name} type={animal.type} says={animal.says} />
+      <Animal key={animal.name} animal={animal}/>
     ))}
 
   </main>;
